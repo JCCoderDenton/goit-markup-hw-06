@@ -59,40 +59,42 @@
             <a data-modal-close class="center-overlay-close" href="#">&times;</a>
             <div class="center-overlay-input">
               <h3>Залиште свої дані, ми вам передзвонимо</h3>
-              <ul class="center-overlay-input-up">
-                <li>
-                  <p>Ім'я</p>
-                  <label class="name-label">
+              <div class="center-overlay-input-up">
+                  <label for="name">Ім'я</label>
+                  <label for="name" class="name-label">
                     <input class="name-label-input" type="text" id="name" name="name"/>
                     <svg class="input-icon icon-user">
                       <use href="images/icons.svg#icon-person"></use>
                     </svg> 
                   </label>
-                </li>
-                <li>
-                  <p>Телефон</p>
-                  <label class="name-label">
-                    <input class="name-label-input" type="text" id="name" name="number"/>
+                  <label for="number">Телефон</label>
+                  <label for="number" class="name-label">
+                    <input class="name-label-input" type="text" id="number" name="number"/>
                     <svg class="input-icon icon-user">
                       <use href="images/icons.svg#icon-phone-black"></use>
                     </svg> 
                   </label>
-                </li>
-                <li>
-                  <p>Пошта</p>
-                  <label class="name-label" >
-                    <input class="name-label-input" type="text" id="name" name="emaol"/>
+                  <label for="email">Пошта</label>
+                  <label for="email" class="name-label" >
+                    <input class="name-label-input" type="text" id="email" name="email"/>
                     <svg class="input-icon icon-user">
                       <use href="images/icons.svg#icon-email-black"></use>
                     </svg> 
                   </label>
-                </li>
-              </ul>
+              </div>
               <div class="center-overlay-input-bottom">
-                <label class="name-label-comment">Коментар
-                  <textarea type="text" name="comment" placeholder="Введіть текст"></textarea >
+                <label class="name-label-comment" for="comment">Коментар</br>
+                  <textarea type="text" name="comment" placeholder="Введіть текст"></textarea ></br>
                 </label>
-                <input type="checkbox" id="check" name="check"/>
+                <label class="form-check" for="check">
+                  <input type="checkbox" class="checkbox visually-hidden" id="check" name="check"/>
+                  <span class="custom-checkbox"> 
+                    <svg class="custom-checkbox-icon">
+                      <use href="images/icons.svg#icon-check"></use>
+                    </svg> 
+                  </span>
+                </label>
+          
                 <label class="name-label-comment" for="check">Погоджуюся з розсилкою та приймаю <a href="#" target="_blank">Умови договору</a></label>
                 <button class="input-button" type="submit">Відправити</button>
               </div>
@@ -480,11 +482,11 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="bottom-line-right">
           <label class="bottom-label">Підпишіться на розсилку</br>
-            <input class="bottom-name-label" type="text" placeholder="E-mail" id="name" name="footer-email"/>
+            <input class="bottom-name-label" type="text" placeholder="E-mail" id="footer-email" name="footer-email"/>
           </label>
-          <button class="bottom-input-button" type="submit" >Підписатися
+          <button class="bottom-input-button" type="submit">Підписатися
             <svg width="24" height="24">
               <use href="images/icons.svg#icon-send"></use>
             </svg>
