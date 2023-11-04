@@ -68,14 +68,15 @@
         <!--Modal-->
         <div class="center-overlay" data-modal>
           <div class="center-button-popup">
-            <a data-modal-close class="center-overlay-close" href="#"
-              >&times;</a
+            <button data-modal-close class="center-overlay-close">
+              <svg class="input-icon icon-user">
+                <use href="images/icons.svg#icon-close-black"></use>
+              </svg></button
             >
             <div class="center-overlay-input">
-              <h3>Залиште свої дані, ми вам передзвонимо</h3>
-              <div class="center-overlay-input-up">
-                <label for="name">Ім'я</label>
-                <label for="name" class="name-label">
+              <h2>Залиште свої дані, ми вам передзвонимо</h2>
+              <form class="center-overlay-input">
+                <label for="name" class="name-label">Ім'я
                   <input
                     class="name-label-input"
                     type="text"
@@ -86,8 +87,7 @@
                     <use href="images/icons.svg#icon-person"></use>
                   </svg>
                 </label>
-                <label for="number">Телефон</label>
-                <label for="number" class="name-label">
+                <label for="number" class="name-label">Телефон
                   <input
                     class="name-label-input"
                     type="text"
@@ -98,8 +98,7 @@
                     <use href="images/icons.svg#icon-phone-black"></use>
                   </svg>
                 </label>
-                <label for="email">Пошта</label>
-                <label for="email" class="name-label">
+                <label for="email" class="name-label">Пошта
                   <input
                     class="name-label-input"
                     type="text"
@@ -110,9 +109,7 @@
                     <use href="images/icons.svg#icon-email-black"></use>
                   </svg>
                 </label>
-              </div>
-              <div class="center-overlay-input-bottom">
-                <label class="name-label-comment" for="comment"
+                <label class="name-label-comment comment" for="comment"
                   >Коментар
                   <textarea
                     name="comment"
@@ -132,12 +129,12 @@
                     </svg>
                   </span>
                 </label>
-                <label class="name-label-comment" for="check"
+                <label class="name-label-comment check-text" for="check"
                   >Погоджуюся з розсилкою та приймаю
                   <a href="#" target="_blank">Умови договору</a></label
                 >
                 <button class="input-button" type="submit">Відправити</button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -522,24 +519,26 @@
             </li>
           </ul>
         </div>
-        <div class="bottom-line-right">
+        <form class="bottom-line-right">
           <label class="bottom-label"
-            >Підпишіться на розсилку<br/>
-            <input
-              class="bottom-name-label"
-              type="text"
-              placeholder="E-mail"
-              id="footer-email"
-              name="footer-email"
-            />
+            >Підпишіться на розсилку
+            <div>
+              <input
+                class="bottom-name-label"
+                type="text"
+                placeholder="E-mail"
+                id="footer-email"
+                name="footer-email"
+              />
+              <button class="bottom-input-button" type="submit">
+                Підписатися
+                <svg width="24" height="24">
+                  <use href="images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </label>
-          <button class="bottom-input-button" type="submit">
-            Підписатися
-            <svg width="24" height="24">
-              <use href="images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </div>
+        </form>
       </div>
     </footer>
   </body>
