@@ -293,21 +293,23 @@ h2 {
 .bottom-line-center{
   display: flex;
   flex-direction: column;
-  color: var(--white-bg-color);
   padding: 0;
   margin-left: 70px;
+}
+
+.bottom-line-center h3{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   color: #FFF;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-}
-
-.bottom-line-center h3{
-  padding: 0;
-  margin: 0;
 }
 
 .bottom-user-socials{
@@ -363,10 +365,12 @@ h2 {
 
 .bottom-line-right div{
   display: flex;
+  margin-top: 20px;
 }
 
-
 .bottom-label{
+  display: flex;
+  flex-direction: column;
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -396,7 +400,6 @@ h2 {
   letter-spacing: 0.48px;
   outline: none;
   padding-left: 16px;
-  margin-top: 20px;
   margin-right: 12px;
 }
 
@@ -421,7 +424,6 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
   fill: white;
-  margin-top: 20px;
 }
 
 .bottom-input-button svg {
@@ -536,7 +538,7 @@ h2 {
 
 .name-label > .input-icon {
   position: absolute;
-  top: 40px;
+  top: 39px;
   left: 12px;
   transform: translateY(-50%);
 }
@@ -555,7 +557,7 @@ h2 {
   height: 18px;
   stroke-width: 0;
   stroke: currentColor;
-  fill: currentColor;
+  fill: #212121;
 }
 
 .name-label-comment {
@@ -576,6 +578,7 @@ h2 {
 .center-overlay-input .name-label,
 .center-overlay-input .comment{
   color: #757575;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -584,9 +587,10 @@ h2 {
 }
 
 .name-label-comment textarea{
-  color: rgba(117, 117, 117, 0.50);
+  color: #757575;
   font-size: 12px;
   font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -602,6 +606,16 @@ h2 {
   transition-duration: 250ms;
   transition-property: border;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.name-label-comment textarea::placeholder{
+  color: rgba(117, 117, 117, 0.50);
+  font-size: 12px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
 }
 
 .name-label-comment textarea:hover,
@@ -624,7 +638,6 @@ h2 {
   justify-self: center;
   border-radius: 2px;
   border: 2px solid #212121;
-
   transition-duration: 250ms;
   transition-property: border background-color ease-in;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -693,7 +706,7 @@ h2 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .center-overlay-input input{
@@ -743,14 +756,18 @@ h2 {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+
+}
+
+.center-button-popup .center-overlay-close svg{
   transition-duration: 250ms;
-  transition-property: color;
+  transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
   
-.center-button-popup .center-overlay-close:hover,
-.center-button-popup .center-overlay-close:focus {
-  color: var(--main-color);
+.center-button-popup .center-overlay-close:hover svg,
+.center-button-popup .center-overlay-close:focus svg {
+  fill: var(--main-color);
 }
 
 .center-button {
